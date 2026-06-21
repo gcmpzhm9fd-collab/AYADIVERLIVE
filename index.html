@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+
+<html lang="zh-CN">
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Aya Diver Life</title>
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;
+    background:#f4fbff;
+    color:#000;
+    line-height:1.6;
+}
+
+header{
+    background:linear-gradient(135deg,#0077b6,#00b4d8);
+    color:white;
+    padding:60px 20px;
+    text-align:center;
+}
+
+header h1{
+    font-size:48px;
+    margin-bottom:10px;
+}
+
+header p{
+    opacity:0.9;
+}
+
+.navbar{
+    margin-top:25px;
+    display:flex;
+    justify-content:center;
+    gap:15px;
+    flex-wrap:wrap;
+}
+
+.navbar a{
+    text-decoration:none;
+    color:white;
+    padding:10px 18px;
+    border-radius:30px;
+    background:rgba(255,255,255,0.15);
+    backdrop-filter:blur(10px);
+    transition:0.3s;
+}
+
+.navbar a:hover{
+    background:white;
+    color:#0077b6;
+    transform:translateY(-2px);
+}
+
+.container{
+    max-width:1000px;
+    margin:auto;
+    padding:30px 20px;
+}
+
+.card{
+    background:white;
+    border-radius:20px;
+    padding:25px;
+    margin-bottom:25px;
+    box-shadow:0 5px 20px rgba(0,0,0,0.08);
+    color:#000;
+}
+
+.card h2{
+    margin-bottom:20px;
+    color:#0077b6;
+}
+
+.totalDive{
+    font-size:48px;
+    font-weight:bold;
+    margin-bottom:15px;
+    color:#0077b6;
+}
+
+.progress{
+    width:100%;
+    height:30px;
+    background:#e6e6e6;
+    border-radius:20px;
+    overflow:hidden;
+}
+
+.progressBar{
+    height:100%;
+    width:35%;
+    background:#00b4d8;
+}
+
+.goal{
+    margin-top:15px;
+    font-size:18px;
+}
+
+.trip{
+    margin-bottom:18px;
+}
+
+.tripName{
+    margin-bottom:8px;
+    font-weight:600;
+}
+
+.tripBar{
+    height:22px;
+    background:#e6e6e6;
+    border-radius:20px;
+    overflow:hidden;
+}
+
+.fill{
+    height:100%;
+    background:#0096c7;
+}
+
+.timeline a{
+    display:block;
+    text-decoration:none;
+    background:#eef9ff;
+    padding:15px;
+    margin-bottom:10px;
+    border-radius:12px;
+    color:#000;
+    transition:0.2s;
+}
+
+.timeline a:hover{
+    transform:translateX(5px);
+    background:#d8f1ff;
+}
+
+.certs{
+    display:flex;
+    gap:20px;
+    flex-wrap:wrap;
+}
+
+.cert{
+    width:250px;
+    height:160px;
+    border-radius:16px;
+    background:#eaf8ff;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    font-size:24px;
+    font-weight:bold;
+    color:#0077b6;
+}
+
+footer{
+    text-align:center;
+    padding:40px;
+    color:#888;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<header>
+
+```
+<h1>🌊 Aya Diver Life</h1>
+
+<p>Explore · Dive · Remember</p>
+
+<nav class="navbar">
+    <a href="index.html">首页</a>
+    <a href="trips.html">行程</a>
+    <a href="gear.html">装备库</a>
+    <a href="marine.html">海底世界</a>
+    <a href="next.html">下一站</a>
+</nav>
+```
+
+</header>
+
+<div class="container">
+
+```
+<div class="card">
+
+    <h2>累计潜水次数</h2>
+
+    <div class="totalDive">35 Dive</div>
+
+    <div class="progress">
+        <div class="progressBar"></div>
+    </div>
+
+    <div class="goal">
+        🎯 距离50潜：15次<br>
+        🎯 距离100潜：65次<br>
+        🎯 距离200潜：165次
+    </div>
+
+</div>
+
+<div class="card">
+
+    <h2>潜水旅程统计</h2>
+
+    <div class="trip">
+        <div class="tripName">2025五一｜斯米兰（14潜）</div>
+        <div class="tripBar">
+            <div class="fill" style="width:87.5%;"></div>
+        </div>
+    </div>
+
+    <div class="trip">
+        <div class="tripName">2025十一｜妈妈岛+薄荷岛（16潜）</div>
+        <div class="tripBar">
+            <div class="fill" style="width:100%;"></div>
+        </div>
+    </div>
+
+    <div class="trip">
+        <div class="tripName">2026春节｜仙本那（5潜）</div>
+        <div class="tripBar">
+            <div class="fill" style="width:31%;"></div>
+        </div>
+    </div>
+
+</div>
+
+<div class="card">
+
+    <h2>潜水行程记忆</h2>
+
+    <div class="timeline">
+
+        <a href="trips.html">2025春节｜薄荷岛 O+A考证</a>
+
+        <a href="trips.html">2025五一｜斯米兰</a>
+
+        <a href="trips.html">2025十一｜妈妈岛 + 薄荷岛</a>
+
+        <a href="trips.html">2026春节｜仙本那</a>
+
+    </div>
+
+</div>
+
+<div class="card">
+
+    <h2>潜水证书</h2>
+
+    <div class="certs">
+
+        <div class="cert">
+            AOW
+        </div>
+
+        <div class="cert">
+            Nitrox
+        </div>
+
+    </div>
+
+</div>
+```
+
+</div>
+
+<footer>
+    Aya Diver Life © 2026
+</footer>
+
+</body>
+</html>
